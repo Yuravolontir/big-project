@@ -1,0 +1,95 @@
+.Text {
+    position: relative;
+    width: 40vw;
+    font-size: 1.2vw;
+    border: 5px solid orange;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 50px;
+    opacity: 0.9;
+    line-height: 2;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4vw;
+    margin-top: 10vh;
+  }
+  
+  .text {
+    position: relative;
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2vw;
+    border: 5px solid orange;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 50px;
+    opacity: 0.9;
+    line-height: 2;
+    padding: 4vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+  }
+  
+  .png-game-text {
+    position: absolute;
+    width: 15vw;
+    aspect-ratio: 1 / 1;
+    rotate: 20deg;
+    animation: move 1s infinite ;
+    left: -7vh;
+    bottom: -7vh;
+    z-index: 100;
+  }
+  .png-html {
+    position: absolute;
+    width: 15vw;
+    aspect-ratio: 1 / 1;
+    rotate: -360deg;
+    animation: moving 5s infinite ;
+    right: -12vh;
+    bottom: 72%;
+  }
+  @keyframes move {
+  
+  0%  {rotate: 20deg;}
+  50% {rotate: 40deg;}
+  100% {rotate: 20deg;}
+  }
+  
+  @keyframes moving {
+  
+    0%  {rotate: 0deg;}
+   
+    100% {rotate:-360deg;}
+    }
+  
+    .code-container {
+        border: 5px solid orange;
+        background-color: lightgreen;
+        border-radius: 20px;
+        padding-left: 5vh;
+        padding-right: 5vh;
+
+      }
+      
+      pre {
+        overflow: hidden;
+        overflow-x: scroll;
+      }
+      
+      code {
+        color: gray;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.7vw;
+        line-height: 1;
+        
+      }
+
+
+
+
+        

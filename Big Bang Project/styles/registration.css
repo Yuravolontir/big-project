@@ -1,21 +1,22 @@
 #form-container {
   position: relative;
-  padding-top: 30px;
-  margin-top: 40vh;
   border: 5px solid orange;
   background-color: white;
-  width:  40vh;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   color: black;
   text-align: center;
   z-index: 1;
   border-radius: 50px;
   opacity: 0.9;
-  
+  width: 20vw;
+  font-size: 1.2vw;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1vw;
+  margin-top: 25vw;
 }
 #go{
+  
   transition: transform 0.3s ease-in-out;
   width: 150px;
   height: 150px;
@@ -24,20 +25,15 @@
   transform: scale(1.5); 
 }
 #form-container button {
-  width: 150px;
-  height: 150px;
   background-color: white;
   border: none;
-  
-
   cursor: pointer;
+
 }
 #form-container input {
-
-  height: 25px;
-  font-size: 20px;
   border: 5px solid lightgreen;
   border-radius: 10px;
+  width: 60%;
 }
 #form-container input:valid {
  color: orange;
@@ -46,25 +42,8 @@
   color: black; 
 }
 
-@media  (max-width: 600px) {
+form > .png-game-text {
+  left: -17vh;
+  bottom: -7vh;
 
-  #form-container {
-    position: relative;
-    padding-top: 30px;
-    margin-top: 90%;
-    border: 5px solid orange;
-    background-color: white;
-    width:  40vh;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    text-align: center;
-    z-index: 1;
-    border-radius: 50px;
-    opacity: 0.9;
-    
-  }
- 
-
- }
+}

@@ -1,21 +1,86 @@
 header, h1 ,h2 , h4 {
-
   font-family: "Orbitron", serif;
 }
 
 #gif-container {
-  padding-left: 10px;
-  margin: 0;
-  width: 60px;
-  height: 60px;
-  position: relative;
+position: relative;
+height: 8vh;
+aspect-ratio: 1 / 1;
+padding-left: 1vh;
+margin-top: auto;
+margin-bottom: auto; 
+}
+
+header{
+  border: 2px solid orange;
+  color: orange;
+  align-items: center;
+  position: sticky;
+  background-color: black;
+  
+  
+}
+
+header > .item1 {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  
+}
+
+h1 {
+font-size: 2.2vw;
+margin-top: auto;
+margin-bottom: auto;
+padding-left: 20px;
+}
+
+nav {
+  margin-top: auto;
+  margin-bottom: auto; 
+}
+
+nav ul {
+list-style: none;
+display: flex;
+justify-content:end;
+}
+
+nav ul li {
+ 
+  padding-right: 2vw;
+
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: lightgreen;
+  font-size: 1.3vw;
+}
+nav ul li a:hover {
+  color: orange;
+}
+.dropdown-content {
+  position: absolute;
+  display: none;
+}
+.dropdown-content a {
+  font-size: 1vw;
+  color: orange;
+  text-decoration: none;
+  display: block;
+  padding-top: 2.9vh;
+}
+.dropdown-content a:hover {
+  color: orangered; 
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .gif {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
+  height: 8vh;
+  aspect-ratio: 1 / 1;
   animation: moove 10s infinite;
 }
 
@@ -46,51 +111,4 @@ header, h1 ,h2 , h4 {
   21%, 100% {
       opacity: 0;
   }
-}
-
-header {
-  color: orange;
-  display: grid;
-  grid-template-columns: auto 1fr auto auto;
-  align-items: center;
-  gap: 50px;
-  position: sticky;
-  border: 2px solid orange;
-  background-color: black;
-  height: 80px;
-  width: 100vw;
-}
-
-h1 {
-  margin: 0;
-  font-size: 30px;
-}
-nav {
-  display: flex;
-  justify-content: space-between; 
-  padding-right: 20px;
-  width: 100%;
-
-}
-nav ul {
-  list-style: none;
-  padding-right: 40px;
-  margin: 0;
-  width: 100%;
-  display: flex;
-  gap: 25px;
-}
-
-nav ul li {
-  margin: 0;
-
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: lightgreen;
-  font-size: 18px;
-}
-nav ul li a:hover {
-  color: orange;
 }
